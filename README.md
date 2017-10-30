@@ -9,21 +9,20 @@
 
 
 **demo中演示了:**
-* 底部tab显示最新微博条数
-* 列表用户头像显示显示右下角vip徽章
+* 列表用户头像显示显示右下角vip
 * 消息界面用户新消息
 * 消息界面订阅号新消息
 * 使用v4包中的RoundedBitmapDrawable制作圆角头像
-* 拖拽删除徽章
+* 拖拽删除
 
-### 爆炸效果参考的 [ExplosionField](https://github.com/tyrantgit/ExplosionField) 改成了只有一个View的情况,只刷新徽章附近的区域
+### 爆炸效果参考的 [ExplosionField](https://github.com/tyrantgit/ExplosionField) 改成了只有一个View的情况,只刷新附近的区域
 
 
 ### Gradle依赖
 
 
 
-### 目前支持的徽章类
+### 目前支持的类
 
 类名 | 应用场景
 :----------- | :-----------
@@ -38,38 +37,38 @@ BadgeFrameLayout | 列表item右侧消息条数
 
 ```java
 /**
- * 显示圆点徽章
+ * 显示圆点
  */
 void showBadgePoint();
 
 /**
- * 显示文字徽章
+ * 显示文字
  *
  * @param text
  */
 void showBadge(String text);
 
 /**
- * 隐藏徽章
+ * 隐藏
  */
 void hiddenBadge();
 
 /**
- * 显示图像徽章
+ * 显示图像
  *
  * @param bitmap
  */
 void showBadge(Bitmap bitmap);
 
 /**
- * 设置拖动删除徽章的代理
+ * 设置拖动删除的代理
  *
  * @param delegate
  */
 void setDismissDelegage(DismissDelegate delegate);
 
 /**
- * 是否显示徽章
+ * 是否显示
  *
  * @return
  */
@@ -80,18 +79,18 @@ boolean isShowBadge();
 
 属性名 | 说明 | 默认值
 :----------- | :----------- | :-----------
-badge_bgColor         | 徽章背景色        | Color.RED
-badge_textColor         | 徽章文本的颜色        | Color.WHITE
-badge_textSize         | 徽章文本字体大小        | 10sp
-badge_verticalMargin         | 徽章背景与宿主控件上下边缘间距离        | 4dp
-badge_horizontalMargin         | 徽章背景与宿主控件左右边缘间距离        | 4dp
-badge_padding         | 徽章文本边缘与徽章背景边缘间的距离        | 4dp
-badge_gravity         | 徽章在宿主控件中的位置        | BadgeImageView和BadgeRadioButton是右上方，其他控件是右边垂直居中
-badge_dragable         | 是否开启拖拽删除徽章        | false
-badge_isResumeTravel         | 拖拽徽章超出轨迹范围后，再次放回到轨迹范围时，是否恢复轨迹        | false
-badge_borderWidth         | 徽章描边宽度        | 0dp
-badge_borderColor         | 徽章描边颜色        | Color.WHITE
-badge_dragExtra         | 触发开始拖拽徽章事件的扩展触摸距离        | 4dp
+badge_bgColor         | 背景色        | Color.RED
+badge_textColor         | 文本的颜色        | Color.WHITE
+badge_textSize         | 文本字体大小        | 10sp
+badge_verticalMargin         | 背景与宿主控件上下边缘间距离        | 4dp
+badge_horizontalMargin         | 背景与宿主控件左右边缘间距离        | 4dp
+badge_padding         | 文本边缘与背景边缘间的距离        | 4dp
+badge_gravity         | 在宿主控件中的位置        | BadgeImageView和BadgeRadioButton是右上方，其他控件是右边垂直居中
+badge_dragable         | 是否开启拖拽删除        | false
+badge_isResumeTravel         | 拖拽超出轨迹范围后，再次放回到轨迹范围时，是否恢复轨迹        | false
+badge_borderWidth         | 描边宽度        | 0dp
+badge_borderColor         | 描边颜色        | Color.WHITE
+badge_dragExtra         | 触发开始拖拽事件的扩展触摸距离        | 4dp
 
 ### 扩展自己的BadgeView
 
