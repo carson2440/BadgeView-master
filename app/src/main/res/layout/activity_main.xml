@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
         <com.carson.badgeview.BadgeView
             android:id="@+id/badge_view"
+            android:background="@color/colorAccent"
             android:layout_width="200dp"
             app:badge_gravity="rightCenter"
             android:layout_height="50dp" />
@@ -19,6 +20,7 @@
             android:id="@+id/badge_imageview"
             app:badge_dragable="true"
             android:padding="7dp"
+            android:src="@mipmap/avator"
             app:badge_gravity="rightBottom"
             app:badge_horizontalMargin="0dp"
             app:badge_verticalMargin="0dp"
