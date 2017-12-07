@@ -20,22 +20,6 @@
 
 ### Gradle依赖
 
-To get a Git project into your build:
-Step 1. Add the JitPack repository to your build file
-Add it in your root build.gradle at the end of repositories:
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-}
-
-dependencies {
-	        compile 'com.github.carson2440:BadgeView-master:1.0.0'
-}
-
-
-
 ### 目前支持的类
 
 类名 | 应用场景
